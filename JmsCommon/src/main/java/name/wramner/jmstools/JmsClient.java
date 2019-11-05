@@ -65,7 +65,8 @@ public abstract class JmsClient<T extends JmsClientConfiguration> {
                     _userTransactionService.shutdown(TimeUnit.MILLISECONDS.convert(maxWaitSeconds, TimeUnit.SECONDS));
                 }
             }
-            System.exit(0);
+            //mithun : Commenting it so it doesnt kill the container. 
+            //System.exit(0);
         }
     }
 
